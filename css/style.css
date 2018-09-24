@@ -1,0 +1,228 @@
+@font-face {
+	font-family: "PF Agora Sans Pro";
+    src: url(../font/pfagorasanspro-reg-webfont.woff2) format("woff2"),
+        url(../font/PFAgoraSansPro-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal; 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: "PF Agora Sans Pro", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.footer {
+	width: 100%;
+}
+.footer__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto auto 0;
+  max-width: 1140px;
+  overflow: hidden;
+  padding: 20px 0 40px;
+}
+.footer-head {
+	background-color: #00b2e6;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.5);
+	color: #fff;
+}
+.footer-head__inner {
+	display: flex;
+	flex-direction: column;
+	margin: auto 20px 0;
+	max-width: 1140px;
+	overflow: visible;
+	padding: 5px 0;
+	text-align: center;
+}
+.footer-head__item {
+	flex: 1 0 auto;
+	margin: auto;
+	padding: 5px;
+}
+.footer-head__link {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.footer-social {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-around;
+	width: 187px;
+	padding: 0px;
+	list-style: none;
+}
+.footer-social__link {
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 47px;
+	width: 47px;
+}
+.footer-social__link--vk {
+	background-image: url(../img/vk.png);
+}
+.footer-social__link--instagram {
+	background-image: url(../img/inst.png);
+}
+.footer-social__link--youtube {
+	background-image: url(../img/youtube.png);
+}
+@media screen and (min-width: 768px) {
+	.footer-head__inner {
+		margin: auto auto 0;
+		text-align: center;
+	}
+	.footer-head__link {
+		font-size: 40px;
+	}
+}
+.footer-list__wrapper {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+}
+.footer-list {
+  font-size: 18px;
+  line-height: 1.5em;
+  list-style-type: none;
+  margin: 18px auto;
+  padding: 0;
+}
+.footer-list__point {
+	color: #6c6c6c;
+	font-size: 18px;
+	text-align: center;
+}
+.footer-list__title {
+  color: #000;
+  font-size: 26px;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+.footer-list__link {
+  color: #6c6c6c;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.footer-list__wrapper:last-child {
+	border-right: none;
+}
+.footer-payment__list {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	max-width: 1140px;
+	margin: 0 auto;
+	margin-bottom: 3px;
+}
+.footer-payment__foto--up {
+	width: 100%;
+	height: 100%;
+}
+.footer-paymet__foto--telefon {
+	width: 100%;
+	height: 100%;
+}
+.footer-payment__foto--mastercard {
+	width: 16%;
+	height: 100%;
+}
+.footer-payment__foto--visa {
+	width: 27%;
+	height: 100%;
+}
+.footer-payment__foto--vtb {
+	width: 40%;
+	height: 100%;
+}
+.footer-payment__item--two {
+	text-align: center;
+}
+.footer-payment__list {
+	padding: 0px;
+}
+.footer-payment__item {
+	margin-top: auto;
+	list-style: none;
+}
+.footer-copyright {
+	width: 100%;
+  background-color: #00b2e6;
+}
+.footer-copyright__text {
+	max-width: 1140px;
+  margin: 0 auto;
+	padding-bottom: 3px;
+	font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+	.footer-list__wrapper {
+		border-right: 1px solid #00b2e6;
+	}
+	.footer-list--first {
+		margin-left: 0;
+	}
+	.footer-list--last {
+		margin-right: 0;
+	}
+	.footer-payment__foto--up {
+
+	}
+	.footer-payment__foto--telefon {
+
+	}
+}
+@media screen and (min-width: 1140px) {
+	.footer-list--first {
+		margin: 18px auto;
+	}
+	.footer-list--last {
+		margin: 18px auto;
+	}
+	.footer-list__title {
+		font-size: 25px;
+		text-align: left;
+	}
+	.footer-list__point {
+		text-align: left;
+	}
+}
