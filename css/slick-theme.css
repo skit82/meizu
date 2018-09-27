@@ -99,11 +99,27 @@
 }
 
 /* Dots */
+.banner .slick-dotted.slick-slider {
+  margin-bottom: 20px;
+}
 .slick-dotted.slick-slider
 {
     margin-bottom: 70px;
 }
+.banner__list .slick-dots {
+    position: absolute;
+    bottom: 10px;
 
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
 .slick-dots
 {
     position: absolute;
@@ -118,6 +134,18 @@
     list-style: none;
 
     text-align: center;
+}
+.banner__list .slick-dots li {
+  position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 .slick-dots li
 {

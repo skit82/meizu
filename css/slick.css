@@ -131,3 +131,15 @@
   top: 115px;
   z-index: 1;
 }
+.left {
+  position: absolute;
+  left: -30px;
+  top: 170px;
+  z-index: 1;
+}
+.right {
+  position: absolute;
+  right: -30px;
+  top: 170px;
+  z-index: 1;
+}

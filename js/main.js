@@ -1,14 +1,14 @@
 $(document).ready(function() {
 	
-  	$('.responsive').slick({
+  	$('.service__list').slick({
     dots: true,
     infinite: true,
     adaptiveHeight: true,
     prevArrow: '<img class="prev-left" src="img/prev-left.png">',
     nextArrow: '<img class="prev-right" src="img/prev-right.png">',
-    speed: 300,
+    speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
@@ -38,12 +38,16 @@ $(document).ready(function() {
     ]
   });
 
-  $('.party-news-sliders-block').slick({
-    customPaging: function (slider, i)
-    {
-      return i + 1;
-    },
-    dots:true,
-    appendDots:$('.party .news-slider-btns .party-news-dots .party .news-slider-btns2 .party-news-dots'),
-    });
+  $('.banner__list').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000, 
+    adaptiveHeight: true,
+    prevArrow: '<img class="left" src="img/banner-left.png">',
+    nextArrow: '<img class="right" src="img/banner-right.png">',
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }); 
 });
