@@ -121,6 +121,19 @@
 }
 .prev-left {
   position: absolute;
+  left: 0px;
+  top: 115px;
+  z-index: 1;
+}
+.prev-right {
+  position: absolute;
+  right: 0px;
+  top: 115px;
+  z-index: 1;
+}
+@media (min-width: 1024px) {
+  .prev-left {
+  position: absolute;
   left: -25px;
   top: 115px;
   z-index: 1;
@@ -131,15 +144,68 @@
   top: 115px;
   z-index: 1;
 }
+}
+.left {
+  width: 30px;
+  height: 30px;
+}
 .left {
   position: absolute;
-  left: -30px;
-  top: 170px;
+  left: 0;
+  top: 50px;
   z-index: 1;
 }
 .right {
+  width: 30px;
+  height: 30px;
+}
+.right {
   position: absolute;
-  right: -30px;
-  top: 170px;
+  right: 0;
+  top: 50px;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .left {
+    width: 50px;
+    height: 50px;
+  }
+  .left {
+    position: absolute;
+    left: 5px;
+    top: 155px;
+    z-index: 1;
+  }
+  .right {
+    width: 50px;
+    height: 50px;
+  }
+  .right {
+    position: absolute;
+    right: 5px;
+    top: 155px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .left {
+    width: 60px;
+    height: 60px;
+  }
+  .left {
+    position: absolute;
+    left: -30px;
+    top: 170px;
+    z-index: 1;
+  }
+  .right {
+    width: 60px;
+    height: 60px;
+  }
+  .right {
+    position: absolute;
+    right: -30px;
+    top: 170px;
+    z-index: 1;
+  }
 }

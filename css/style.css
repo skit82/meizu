@@ -125,6 +125,7 @@ input[type="radio"].visually-hidden {
 }
 .header-menu__link {
 	display: block;
+	padding: 10px 0;
 	text-align: center;
 	font-size: 22px;
 	color: #333333;
@@ -142,7 +143,7 @@ input[type="radio"].visually-hidden {
   height: 161px;
   position: absolute;
   left: 0px;
-  top: 46px;
+  top: 44px;
   background-color: #ffffff;
   margin: 0px;
   padding: 0px;
@@ -165,20 +166,19 @@ input[type="radio"].visually-hidden {
 .header-menu__item:hover {
 	border-bottom: 1px solid #000000;
 }
-.header-menu__item:hover .header-menu__sub {
-	display: block;
-}
 .header-menu__link:hover {
 	color: #00b4ff;
 }
 @media (min-width: 767px) {
 	.header-menu__link {
-	font-size: 16px;
+		padding: 0;
+		font-size: 16px;
 	}
 	.header-menu__item {
 		width: auto;
     border: none;
     margin: 0px;
+    margin-bottom: -10px;
 	}
 	.header-top__contact {
 		width: 100%;
@@ -194,11 +194,19 @@ input[type="radio"].visually-hidden {
 	}
 	.header-menu__list {
 		flex-direction: row;
+		align-self: normal;
+    padding-top: 17px;
+	}
+	.header-menu__item:hover {
+		border-bottom: 5px solid #46b9e8;
+	}
+	.header-menu__item:hover .header-menu__sub {
+		display: block;
 	}
 }
 @media (min-width: 1024px) {
 	.header-menu__item:hover {
-		border-bottom: none;
+		border-bottom: 5px solid #46b9e8;
 	}
 }
 .banner {
@@ -232,6 +240,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	padding-top: 10px;
+	margin-bottom: 25px;
 }
 .appointment__text {
 	order: 2;
@@ -252,10 +261,11 @@ input[type="radio"].visually-hidden {
   border: 1px solid #00b4ff;
 }
 .appointment__title {
-	margin: 0px;
+	margin: 0px 10px;
 	font-size: 25px;
 	font-weight: 400;
 	line-height: 40px;
+	color: #313d4b;
 	padding-bottom: 10px;
 	text-transform: uppercase;
 	border-bottom: 1px solid #000000;
@@ -276,6 +286,9 @@ input[type="radio"].visually-hidden {
 	}
 }
 @media (min-width: 1024px) {
+	.appointment__title {
+		margin: 0px;
+	}
 	.appointment__text {
 		padding: 0px;
 		padding-right: 10px;
@@ -299,11 +312,10 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .about-us__title {
-	margin: 0px;
+	margin: 0px 10px;
   font-size: 25px;
   font-weight: 400;
-  line-height: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   color: #313d4b;
   text-transform: uppercase;
   border-bottom: 1px solid #000000;
@@ -379,12 +391,23 @@ input[type="radio"].visually-hidden {
   height: 225px;
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+	.about-us__title {
+		line-height: 40px;
+		padding-bottom: 10px;
+	}
+}
+@media (min-width: 1024px) {
+	.about-us__title {
+		margin: 0px;
+	}
+}
 .service {
 	max-width: 1140px;
 	margin: 0 auto;
 }
 .service__title {
-	margin: 0px;
+	margin: 0px 10px;
   padding: 0px;
   font-size: 25px;
   line-height: 40px;
@@ -421,6 +444,11 @@ input[type="radio"].visually-hidden {
 	width: 250px;
   height: 315px;
 }
+@media (min-width: 1024px) {
+	.service__title {
+		margin: 0px;
+	}
+}
 .feedback {
 	position: relative;
 	max-width: 1140px;
@@ -435,13 +463,14 @@ input[type="radio"].visually-hidden {
 .feedback__title {
 	max-width: 570px;
 	margin: 0px;
+	padding: 0 10px;
   padding-bottom: 30px;
 	font-size: 16px;
 	font-weight: bold;
 	color: #000000;
 }
 .feedback__name {
-	margin: 0px;
+	margin: 0px 10px;
   padding-bottom: 20px;
   font-size: 25px;
   font-weight: 400;
@@ -460,12 +489,13 @@ input[type="radio"].visually-hidden {
 	line-height: 22px;
 	outline: none;
 	border: none;
+	background-color: hsla(0,0%,100%,-0.7);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .feedback__inner {
 	display: flex;
 	flex-direction: column;
-	margin-top: 15px;
+	margin-top: 14px;
 }
 .feedback__text {
 	margin: 0px;
@@ -529,6 +559,7 @@ input:checked ~ .feedback__icon::after {
   position: absolute;
   top: 60px;
   right: 0px;
+  z-index: -1;
 }
 @media (min-width: 768px) {
 	.feedback__img {
@@ -542,6 +573,15 @@ input:checked ~ .feedback__icon::after {
 	}
 	.feedback__submit {
 		margin: 0px;
+	}
+}
+@media (min-width: 1024px) {
+	.feedback__name {
+		margin: 0px;
+	}
+	.feedback__title {
+		padding: 0px;
+		padding-bottom: 30px;
 	}
 }
 .footer {
