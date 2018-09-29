@@ -306,6 +306,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
   padding: 0px;
   padding-top: 18px;
   margin: 0px;
@@ -325,7 +326,7 @@ input[type="radio"].visually-hidden {
 }
 .about-us__item {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
 }
 .about-us__text--block1 {
 	position: absolute;
@@ -396,10 +397,28 @@ input[type="radio"].visually-hidden {
 		line-height: 40px;
 		padding-bottom: 10px;
 	}
+	.about-us__item {
+		padding: 20px;
+		margin-bottom: 0px;
+	}
 }
 @media (min-width: 1024px) {
 	.about-us__title {
 		margin: 0px;
+	}
+	.about-us__item {
+		padding: 0px;
+		margin-bottom: 45px;
+	}
+}
+@media (min-width: 1140px) {
+	.about-us__list::before {
+		position: absolute;
+		content: "";
+		width: 1140px;
+		height: 500px;
+		background-image: url(../img/separator.png);
+		background-position: center;
 	}
 }
 .service {
@@ -625,30 +644,23 @@ input:checked ~ .feedback__icon::after {
 }
 .footer-social {
 	align-items: baseline;
-	display: flex;
-	justify-content: space-around;
-	width: 187px;
-	padding: 0px;
-	list-style: none;
-}
-.footer-social__link {
-	background-position: 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	display: block;
-	height: 47px;
-	width: 47px;
-}
-.footer-social__link--vk {
-	background-image: url(../img/vk.png);
-}
-.footer-social__link--instagram {
-	background-image: url(../img/inst.png);
-}
-.footer-social__link--youtube {
-	background-image: url(../img/youtube.png);
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0px;
+  list-style: none;
 }
 @media screen and (min-width: 768px) {
+	.footer span {
+		position: absolute;
+  	background-color: rgb(39, 49, 61);
+  	width: 100%;
+  	height: 60px;
+  	display: block;
+  	box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .20);
+	}
 	.footer-head__inner {
 		margin: auto auto 0;
 		text-align: center;
@@ -660,6 +672,7 @@ input:checked ~ .feedback__icon::after {
 .footer-list__wrapper {
 	flex-direction: column;
 	flex: 1 0 auto;
+	z-index: 1;
 }
 .footer-list {
   font-size: 18px;
@@ -672,6 +685,9 @@ input:checked ~ .feedback__icon::after {
 	color: #ffffff;
 	font-size: 16px;
 	text-align: center;
+}
+.footer-list__point img {
+	vertical-align: text-bottom;
 }
 .footer-list__title {
   color: #fff;
