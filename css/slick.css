@@ -209,3 +209,15 @@
     z-index: 1;
   }
 }
+.left-arrow {
+    position: absolute;
+    left: 0;
+    top: 112px;
+    z-index: 1;
+  }
+  .right-arrow {
+    position: absolute;
+    right: 0;
+    top: 112px;
+    z-index: 1;
+  }

@@ -49,5 +49,29 @@ $(document).ready(function() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1
-  }); 
+  });
+
+  $('.about-us__list').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    prevArrow: '<img class="left-arrow" src="img/left-arrow.png">',
+    nextArrow: '<img class="right-arrow" src="img/right-arrow.png">',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+    {
+    breakpoint: 9999,
+    settings: "unslick"
+    },
+    {
+      breakpoint: 767,
+      setting:{
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+    ]
+  });
 });
