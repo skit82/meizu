@@ -655,7 +655,7 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	max-width: 570px;
 	margin: 5px 0;
-	padding-left: 3px;
+	padding-left: 10px;
 	font-size: 16px;
 	font-style: italic;
 	color: #838b93;
@@ -669,6 +669,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	margin-top: 14px;
+	padding-left: 10px;
 }
 .feedback__text {
 	margin: 0px;
@@ -755,6 +756,12 @@ input:checked ~ .feedback__icon::after {
 	.feedback__title {
 		padding: 0px;
 		padding-bottom: 30px;
+	}
+	.feedback__inner {
+		padding: 0px;
+	}
+	.feedback__input {
+		padding-left: 3px;	
 	}
 }
 .footer {
