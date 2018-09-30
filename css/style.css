@@ -813,6 +813,13 @@ input:checked ~ .feedback__icon::after {
   padding: 0px;
   list-style: none;
 }
+.copyright {
+	background-color: rgb(39, 49, 61);
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .20);
+}
 @media screen and (min-width: 768px) {
 	.footer span {
 		position: absolute;
@@ -834,12 +841,14 @@ input:checked ~ .feedback__icon::after {
 	flex-direction: column;
 	flex: 1 0 auto;
 	z-index: 1;
+	padding: 20px;
+  margin: 5px;
 }
 .footer-list {
   font-size: 18px;
   line-height: 1.5em;
   list-style-type: none;
-  margin: 18px auto;
+  margin: 0px;
   padding: 0;
 }
 .footer-list__point {
@@ -916,6 +925,7 @@ input:checked ~ .feedback__icon::after {
 .footer-copyright__text {
 	max-width: 1140px;
   margin: 0 auto;
+  padding-top: 5px;
 	padding-bottom: 50px;
 	font-size: 16px;
   color: #ffffff;
@@ -923,6 +933,8 @@ input:checked ~ .feedback__icon::after {
 }
 @media screen and (min-width: 768px) {
 	.footer-list__wrapper {
+		margin: 0px;
+		padding: 0px;
 		border-right: 1px solid #ffffff;
 	}
 	.footer-list--first {
@@ -930,6 +942,9 @@ input:checked ~ .feedback__icon::after {
 	}
 	.footer-list--last {
 		margin-right: 0;
+	}
+	.footer-list {
+		margin: 18px auto;
 	}
 	.footer-payment__foto--up {
 
