@@ -5,6 +5,13 @@
     font-weight: 400;
     font-style: normal; 
 }
+@font-face {
+	font-family: "PF Agora Sans Pro";
+    src: url(../font/pfagorasanspro-light-webfont.woff2) format("woff2"),
+        url(../font/PFAgoraSansPro-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal; 
+}
 *,
 *:before,
 *:after {
@@ -816,7 +823,7 @@ input:checked ~ .feedback__icon::after {
 .copyright {
 	background-color: rgb(39, 49, 61);
   width: 100%;
-  height: 100%;
+  min-height: 60px;
   display: block;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .20);
 }
@@ -926,7 +933,7 @@ input:checked ~ .feedback__icon::after {
 	max-width: 1140px;
   margin: 0 auto;
   padding-top: 5px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	font-size: 16px;
   color: #ffffff;
   text-align: center;
@@ -965,5 +972,88 @@ input:checked ~ .feedback__icon::after {
 	}
 	.footer-list__point {
 		text-align: left;
+	}
+}
+.breadcrumbs-paper {
+	border-bottom: 1px solid #000000;
+}
+.breadcrumbs-paper__inner {
+	display: flex;
+  max-width: 1140px;
+  margin: 0px auto;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  padding: 0px;
+  list-style: none;
+}
+.breadcrumbs-paper__list a {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000000;
+	text-decoration: none;
+}
+.breadcrumbs-paper__list span {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 0 5px;
+	color: #000000;
+}
+.breadcrumbs-current {
+	font-size: 16px;
+	font-weight: 300;
+	color: #000;
+}
+.guidance {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.guidance__title {
+	margin: 0px;
+  margin-top: 28px;
+  margin-bottom: 22px;
+  padding-bottom: 17px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  color: #313d4b;
+  border-bottom: 1px solid #000000;
+}
+.guidance__text:first-child {
+	margin-bottom: 0px;
+}
+.guidance__text {
+	margin: 0px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 100;
+  text-indent: 20px;
+  text-align: justify;
+  color: #666666;
+}
+.guidance__name {
+	margin: 0px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  color: #666666;
+}
+@media screen and (min-width: 767px) {
+	.guidance__text {
+		padding-left: 26px;
+		padding-right: 46px;
+		font-size: 24px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.guidance__text {
+		padding-right: 36px;
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	.guidance__name {
+		margin-bottom: 25px;
 	}
 }
