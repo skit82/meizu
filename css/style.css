@@ -251,10 +251,18 @@ input[type="radio"].visually-hidden {
 	}
 	.header-social {
 		width: 100%;
+		align-items: center;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: row;
 		        flex-direction: row;
+	}
+	.header-social__link {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
 	}
 	.header-menu__inner {
 		-webkit-box-orient: horizontal;
@@ -341,6 +349,13 @@ input[type="radio"].visually-hidden {
 	text-align: justify;
 	text-indent: 15px;
 	color: #6b6b6b;
+}
+.appointment__text a {
+	font-size: 16px;
+    font-weight: 400;
+    color: #44c8ff;
+    text-decoration: none;
+    border-bottom: 1px solid #44c8ff;
 }
 .appointment__img {
 	-webkit-box-ordinal-group: 2;

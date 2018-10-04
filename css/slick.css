@@ -124,12 +124,18 @@
   left: 0px;
   top: 115px;
   z-index: 1;
+  opacity: 0.05;
 }
 .prev-right {
   position: absolute;
   right: 0px;
   top: 115px;
   z-index: 1;
+  opacity: 0.05;
+}
+.slick-slider:hover .prev-left,
+.slick-slider:hover .prev-right {
+  opacity: 1;
 }
 @media (min-width: 1024px) {
   .prev-left {
@@ -154,6 +160,7 @@
   left: 0;
   top: 50px;
   z-index: 1;
+  opacity: 0.05;
 }
 .right {
   width: 30px;
@@ -164,6 +171,11 @@
   right: 0;
   top: 50px;
   z-index: 1;
+  opacity: 0.05;
+}
+.slick-slider:hover .left,
+.slick-slider:hover .right {
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .left {
@@ -210,14 +222,20 @@
   }
 }
 .left-arrow {
-    position: absolute;
-    left: 0;
-    top: 112px;
-    z-index: 1;
-  }
-  .right-arrow {
-    position: absolute;
-    right: 0;
-    top: 112px;
-    z-index: 1;
-  }
+  position: absolute;
+  left: 0;
+  top: 112px;
+  z-index: 1;
+  opacity: 0.05;
+}
+.right-arrow {
+  position: absolute;
+  right: 0;
+  top: 112px;
+  z-index: 1;
+  opacity: 0.05;
+}
+.slick-slider:hover .left-arrow,
+.slick-slider:hover .right-arrow {
+  opacity: 1;
+}
