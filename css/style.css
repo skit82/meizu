@@ -1573,6 +1573,15 @@ input:checked ~ .feedback__icon::after {
 .catalog {
 	max-width: 1140px;
 	margin: 0 auto;
+	margin-bottom: 100px;
+}
+.catalog__inner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
 }
 .catalog__title {
 	margin: 0px 10px;
@@ -1596,10 +1605,110 @@ input:checked ~ .feedback__icon::after {
 .catalog__item {
 	margin: 0 auto;
 }
+.catalog__show-all {
+	display: block;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 400;
+  height: 55px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #20baee;
+  border-radius: 100px;
+}
+.catalog-list__inner span {
+	display: block;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+.catalog-list__inner a {
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	text-decoration: none;
+  margin-bottom: 25px;
+}
+.catalog-list {
+	margin-top: 20px;
+}
+@media (min-width: 768px) {
+	.catalog-list__inner {
+		display: flex;
+    flex-wrap: wrap;
+	}
+}
 @media (min-width: 1024px) {
+	.catalog-list {
+		margin-top: 0px;
+	}
 	.catalog__title {
 		margin: 0px;
   	margin-top: 20px;
   	margin-bottom: 22px;
 	}
+	.catalog-list__inner {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.catalog__inner {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+	}
 }
+
+.filter-list-top-header {
+	width: 285px;
+	margin: 0 auto;
+  font-size: 25px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #20baee;
+}
+.filter-list-top-body a {
+	display: block;
+	width: 190px;
+	margin: 0 auto;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #e8e8e8;
+}
+.filter__link {
+	display: block;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  color: #20baee;
+  text-decoration: none;
+  border-bottom: 1px solid #20baee;
+}
+.filter-list-top-body a:hover {
+	color: #20baee;
+	border-bottom: 1px solid #20baee;
+}
+.filter-list-top-body a {
+	display: none;
+}
+.filter-list-top:hover .filter-list-top-body a {
+	display: block;
+}
+
+
+
