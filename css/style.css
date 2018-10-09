@@ -1678,6 +1678,18 @@ input:checked ~ .feedback__icon::after {
   text-transform: uppercase;
   background-color: #20baee;
 }
+.filter__link  {
+	display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #20baee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+}
 .filter-list-top-body a {
 	display: block;
 	width: 190px;
@@ -1689,26 +1701,74 @@ input:checked ~ .feedback__icon::after {
   text-decoration: none;
   border-bottom: 1px solid #e8e8e8;
 }
-.filter__link {
-	display: block;
-  font-size: 20px;
-  line-height: 40px;
-  font-weight: 400;
-  text-align: center;
-  color: #20baee;
-  text-decoration: none;
-  border-bottom: 1px solid #20baee;
+.filter-list-top-body {
+	width: 285px;
+  margin: 0 auto;
+  border: 1px solid #20baee;
 }
 .filter-list-top-body a:hover {
 	color: #20baee;
 	border-bottom: 1px solid #20baee;
 }
-.filter-list-top-body a {
-	display: none;
+
+
+@media (min-width: 1024px) {
+	.filter-list-top-body a {
+		display: block;
+	}
+	.filter-list-top-body {
+		border: 1px solid #20baee;
+	}
 }
-.filter-list-top:hover .filter-list-top-body a {
+.flashcard {
+	max-width: 1140px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}	
+.flashcard__title {
+	margin: 0px 10px;
+  margin-top: 20px;
+  margin-bottom: 22px;
+  padding-bottom: 12px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #313d4b;
+  border-bottom: 1px solid #000000;
+}
+.flashcard-list__inner {
+	display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.flashcard-list__inner a {
 	display: block;
+	margin: 0 auto;
 }
-
-
+.flashcard__text {
+	padding: 0 10px;
+	font-size: 16px;
+	font-weight: 300;
+	text-align: justify;
+}
+@media (min-width: 728px) {
+	.flashcard-list__inner {
+		flex-direction: row;
+	}
+	.flashcard__text {
+		margin: 0px;
+	}
+@media (min-width: 1024px) {
+	.flashcard__title {
+		margin: 0px;
+  	margin-top: 20px;
+  	margin-bottom: 22px;
+	}
+	.flashcard-list__inner {
+		flex-direction: row;
+		margin: 0px;
+		padding-left: 10px;
+	}
+}
 
