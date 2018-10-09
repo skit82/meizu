@@ -1719,6 +1719,9 @@ input:checked ~ .feedback__icon::after {
 	.filter-list-top-body {
 		border: 1px solid #20baee;
 	}
+	.filter__block {
+		display: none;
+	}
 }
 .flashcard {
 	max-width: 1140px;

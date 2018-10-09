@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+    $('.filter__link').on('click', function() {
+        $('.filter__block').slideToggle(200, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+  })
 	
   	$('.service__list').slick({
     dots: true,
