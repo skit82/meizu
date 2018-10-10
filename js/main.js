@@ -1,12 +1,16 @@
 $(document).ready(function() {
 
-    $('.filter__link').on('click', function() {
-        $('.filter__block').slideToggle(200, function(){
-          if($(this).css('display') === 'none'){
-          $(this).removeAttr('style')
-          };
-      });
-  })
+    
+
+    $('[data-toggle]').on('click', function(e){
+      var tgt = $(this).data('target');
+      if (tgt && $(tgt).length > 0) {
+        $(tgt).toggleClass('collapse');
+
+        e.preventDefault();
+        return false;
+      }
+    })
 	
   	$('.service__list').slick({
     dots: true,
