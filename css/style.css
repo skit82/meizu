@@ -1626,9 +1626,9 @@ input:checked ~ .feedback__icon::after {
 }
 .catalog-list__inner a {
 	display: block;
-	width: 250px;
-	margin: 0 auto;
-	text-decoration: none;
+  width: 250px;
+  margin: 0px auto;
+  text-decoration: none;
   margin-bottom: 25px;
 }
 .catalog-list {
