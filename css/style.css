@@ -1634,6 +1634,9 @@ input:checked ~ .feedback__icon::after {
 .catalog-list {
 	margin-top: 20px;
 }
+.catalog-list.collapse {
+	display: block;
+}
 @media (min-width: 768px) {
 	.catalog-list__inner {
 		display: flex;
@@ -1753,6 +1756,9 @@ input:checked ~ .feedback__icon::after {
 	font-size: 16px;
 	font-weight: 300;
 	text-align: justify;
+}
+.flashcard-list.collapse {
+	display: none;
 }
 @media (min-width: 728px) {
 	.flashcard-list__inner {
