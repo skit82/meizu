@@ -1757,8 +1757,28 @@ input:checked ~ .feedback__icon::after {
 	font-weight: 300;
 	text-align: justify;
 }
+.flashcard-list {
+	margin-bottom: 30px;
+}
 .flashcard-list.collapse {
 	display: none;
+}
+.spoiler__content {
+	display: none;
+}
+.spoiler-block {
+	padding: 0 10px;
+}
+.spoiler__link {
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 300;
+	color: #3ec3f0;
+}
+.spoiler__content {
+	font-size: 16px;
+	font-weight: 300;
 }
 @media (min-width: 728px) {
 	.flashcard-list__inner {

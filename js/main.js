@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+    $('.spoiler__link').click(function(){ 
+      $(this).parent().children('div.spoiler__content').toggle('fast');
+      return false;
+    });
         
   	$('.service__list').slick({
     dots: true,
