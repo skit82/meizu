@@ -4,6 +4,14 @@ $(document).ready(function() {
       $(this).parent().children('div.spoiler__content').toggle('fast');
       return false;
     });
+
+    $('.products__show-all').on('click', function() {
+        $('.product__invisible').slideToggle(500, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
         
   	$('.service__list').slick({
     dots: true,
